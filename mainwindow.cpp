@@ -23,6 +23,25 @@ QString slotStyleString(QPushButton button){
 
 void MainWindow::on_btnred_clicked()
 {
-    QVector<QLabel*> v{ui->slot1, ui->slot2, ui->slot3, ui->slot4};
     ui->slot1->setStyleSheet("QLabel { background-color:#ff0000; border-radius: 15px;}");
+}
+
+void MainWindow::on_btnblue_clicked()
+{
+    ui->slot2->setStyleSheet("QLabel{background-color : rgb(0, 170, 255); border-radius:15px;}");
+}
+
+void MainWindow::on_btnorg_clicked()
+{
+    ui->slot3->setStyleSheet("QLabel{background-color : rgb(0, 170, 255); border-radius:15px;}");
+}
+
+void MainWindow::on_btnyel_clicked()
+{
+     ui->slot4->setStyleSheet("QLabel{background-color : rgb(0, 170, 255); border-radius:15px;}");
+}
+
+void MainWindow::on_end_clicked()
+{
+    QApplication::quit();
 }

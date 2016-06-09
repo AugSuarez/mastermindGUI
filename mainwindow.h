@@ -20,6 +20,14 @@ private slots:
 
     void on_btnred_clicked();
 
+    void on_btnblue_clicked();
+
+    void on_btnorg_clicked();
+
+    void on_btnyel_clicked();
+
+    void on_end_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
